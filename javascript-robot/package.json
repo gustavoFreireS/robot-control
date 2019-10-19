@@ -1,0 +1,16 @@
+{
+  "name": "javascript-robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gamepad": "^1.6.0",
+    "onoff": "^5.0.0",
+    "pigpio": "^2.0.1"
+  }
+}
