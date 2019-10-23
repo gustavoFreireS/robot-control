@@ -15,15 +15,13 @@ try:
         for event in events:
             if event.type == pygame.JOYAXISMOTION:
                 if j.get_axis(0) < 0:
-                    robby.forward()
                     robby.left()
                     if j.get_button(0):
-                        robby.forward()
+                       robby.forward(speed = 1, curve_left= 0.7 )
                 elif j.get_axis(0) > 0:
-                    robby.forward()
                     robby.right()
                     if j.get_button(0):
-                        robby.forward()
+                        robby.forward(speed = 1, curve_right= 0.7 )
                 elif j.get_axis(0) == 0:
                     if not j.get_button(0):
                         robby.stop()
